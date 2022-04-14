@@ -1,0 +1,42 @@
+<mmsdialog>
+	<childwindow name="racing_device_menu_win" dx="800px" dy="417px" w="430px" h="380px" alignment="top-left" show="false"
+        bgcolor="#00000000">
+	        <menu name = "racing_glass_device_menu" class="racing_label_device_menu_class" inputmode="MOVE" vloop="true" alignment="center">
+				<menuitem
+					widget.menubutton.data="Max Power"
+					widget.title.text="msg_setting_uav_max_power"
+					widget.value.text="N/A"
+				/>
+				<menuitem
+					widget.menubutton.data="Power Limit"
+					widget.title.font.size.en="23"
+					widget.title.text="msg_setting_uav_power_limit"
+					widget.value.text="N/A"
+				/>
+				<menuitem childwindow="sbus_protocol_win"
+					widget.menubutton.data="sbus mode"
+					widget.title.text="msg_setting_device_info_baud_rate_title"
+					widget.value.text="N/A"
+				/>
+				<menuitem childwindow="reset_all_win"
+					widget.menubutton.data="Reset All"
+					widget.title.text="msg_setting_reset_all_left_menu_btn"
+					widget.title.font.size.kr="22"
+					widget.up.image.name=""
+					widget.up.selimage.name=""
+					widget.down.image.name=""
+					widget.down.selimage.name=""
+					widget.value.text=""
+				/>
+				<menuitem childwindow="racing_device_info_win"
+					widget.menubutton.data="Device Info"
+					widget.title.text="msg_setting_device_info_title"
+					widget.value.text=""
+					widget.up.image.name=""
+					widget.up.selimage.name=""
+					widget.down.image.name=""
+					widget.down.selimage.name=""
+				/>
+	        </menu>
+	</childwindow>
+</mmsdialog>

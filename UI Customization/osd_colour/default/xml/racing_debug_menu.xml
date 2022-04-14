@@ -1,0 +1,39 @@
+<mmsdialog>
+	<childwindow name="racing_debug_win" dx="600px" dy="420px-270" w="500px" h="400px" alignment="top-left" show="false"
+		bgimage="bg/secondarymenu_bg_default.png">
+		<hbox>
+			<gap />
+			<vbox size="400px">
+				<gap />
+				<menu name="racing_debug_menu" size="400px" class="racing_osd_switch_menu_class" inputmode="MOVE" vloop = "true" alignment="center">
+					<menuitem
+						widget.icon.image.name=""
+						widget.icon.selimage.name=""
+						widget.switchbutton.data="Codec OSD"
+						widget.title.text="Codec OSD"
+					/>
+					<menuitem
+						widget.icon.image.name=""
+						widget.icon.selimage.name=""
+						widget.switchbutton.data="SDR OSD"
+						widget.title.text="SDR OSD"
+					/>
+					<menuitem
+						widget.icon.image.name=""
+						widget.icon.selimage.name=""
+						widget.switchbutton.data="Camera OSD"
+						widget.title.text="Camera OSD"
+					/>
+					<menuitem
+						widget.icon.image.name=""
+						widget.icon.selimage.name=""
+						widget.switchbutton.data="Temperature OSD"
+						widget.title.text="Temperature OSD"
+					/>
+				</menu>
+				<gap />
+			</vbox>
+			<gap />
+		</hbox>
+	</childwindow>
+</mmsdialog>
