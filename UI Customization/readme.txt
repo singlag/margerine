@@ -5,4 +5,4 @@ Install Colour OSD to DJI goggles V1
 3) reboot goggles 
 4) execute sh script at /blackbox/osd_colour to change OSD colour
 
-you can use a android call "Bugjager" and saved command to execute without computer
+you can use a android app call "Bugjager" and saved command to execute without computer
