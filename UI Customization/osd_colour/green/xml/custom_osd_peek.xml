@@ -1,0 +1,170 @@
+<mmsdialog>
+	<childwindow name="custom_osd_peek_win" dx="0px" dy="0px" w="1440px" h="700px" alignment="top-left" show="false" 
+		focusable="false" bgcolor="#00000000">
+	<vbox>
+		<hbox size="48px">
+			<vbox name="rssi" size="100px">
+				<hbox size="48px">
+					<image size="48px" image.name="custom_osd_rssi.png" alignment="right"/>
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="52px" name="rssiValue" text="99" color="#01ff37f2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="flyM" size="100px">
+				<hbox name="(3,1)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="100px" name="flyMode" text="STAB" color="#fffffff2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="pratefile" size="100px">
+				<hbox name="(4,2)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="100px" name="pidRateProfile" text="1-2" color="#fffffff2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="sats" size="100px">
+				<hbox name="(7,1)" size="48px">
+					<image size="48px" image.name="custom_osd_gps.png" alignment="right"/>
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="52px" name="gpsSats" text="14" color="#01ff37f2" font.size="28" alignment="left" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="pitchA" size="100px">
+				<hbox name="(8,2)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="100px" name="pitchAngle" text="-00.0" color="#fffffff2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="rollA" size="100px">
+				<hbox name="(1,3)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="100px" name="rollAngle" text="-00.0" color="#fffffff2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="temp" size="100px">
+				<hbox name="(4,3)" size="48px">
+					<image size="48px" image.name="custom_osd_celcius.png" alignment="right"/>
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="52px" name="escTemp" text="00" color="#01ff37f2" font.size="28" alignment="left" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="vario" size="100px">
+				<hbox name="(3,3)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="100px" name="numericalVario" text="0.0" color="#fffffff2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="pwr" size="100px">
+				<hbox name="(3,2)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="100px" name="power" text="000W" color="#01ff37f2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+		</hbox>
+		<gap size="10px" />
+		<hbox size="48px">
+			<vbox name="cName" size="200px">
+				<hbox name="(4,1)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="200px" name="craftName" text="CRAFT_NAME" color="#01ff37f2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="armed" size="200px">
+				<hbox name="(2,3)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="200px" name="disarmed" text="DISARMED" color="#ffff00f2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="mainBatt" size="200px">
+				<hbox size="48px">
+					<image size="48px" image.name="custom_osd_voltage.png" alignment="right"/>
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="152px" name="mainBattVoltage" text="00.0v" color="#01ff37f2" font.size="28" alignment="left" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="avg" size="200px">
+				<hbox name="(5,2)" size="48px">
+					<image size="48px" image.name="custom_osd_voltage.png" alignment="right"/>
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="152px" name="avgCeilVoltage" text="0.00v" color="#01ff37f2" font.size="28" alignment="left" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="Draw" size="200px">
+				<hbox name="(5,1)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="200px" name="currentDraw" text="00.00A" color="#01ff37f2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="mah" size="200px">
+				<hbox name="(6,1)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="200px" name="mahDrawn" text="000mAh" color="#01ff37f2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+
+		</hbox>
+		<gap size="10px" />
+		<hbox size="48px">
+			<vbox name="Lon" size="300px">
+				<hbox name="(6,2)" size="48px">
+					<image size="48px" image.name="custom_osd_right_arrow.png" alignment="right"/>
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="252px" name="gpsLon" text="-000.0000000" color="#01ff37f2" font.size="28" alignment="left" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="Lat" size="300px">
+				<hbox name="(7,2)" size="48px">
+					<image size="48px" image.name="custom_osd_up_arrow.png" alignment="right"/>
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="252px" name="gpsLat" text="-000.0000000" color="#01ff37f2" font.size="28" alignment="left" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="proll" size="300px">
+				<hbox name="(8,1)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="300px" name="pidRoll" text="ROL 000 000 000" color="#01ff37f2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="ppitch" size="300px">
+				<hbox name="(1,2)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="300px" name="pidPitch" text="PIT 000 000 000" color="#01ff37f2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="usage" size="200px">
+				<hbox name="(8,3)" size="24px">
+					<progressbar name="mainBattUsage" size="200px" bgcolor="#ffffffff" clickable="false" />
+				</hbox>
+			</vbox>
+		</hbox>
+		<gap size="10px" />
+		<hbox size="48px">
+			<vbox name="pyaw" size="300px">
+				<hbox name="(2,2)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="300px" name="pidYaw" text="YAW 000 000 000" color="#01ff37f2" font.size="28" alignment="center" />
+				</hbox>
+			</vbox>
+			<gap size="10px" />
+			<vbox name="rtc" size="300px">
+				<hbox name="(1,4)" size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="300px" name="rtcDate" text="2019-10-14-12:00:00" color="#01ff37f2" font.size="24" alignment="center" /> />
+				</hbox>
+			</vbox>
+		</hbox>
+		<gap size="10px" />
+		<hbox size="80px">
+			<vbox name="hairs" size="200px">
+				<hbox name="(6,3)" size="80px">
+					<image name="crossHairs" size="80px" image.name="custom_osd_cross_hairs.png" />
+				</hbox>
+			</vbox>
+		</hbox>
+		<gap size="10px" />
+		<hbox size="228px">
+			<vbox name="sidebars" size="720px">
+				<hbox name="(7,3)" size="228px">
+					<image name="horizonSidebars" image.name="custom_osd_horizon_sidebars_720.png" />
+				</hbox>
+			</vbox>
+		</hbox>
+	</vbox>
+	</childwindow>
+</mmsdialog>

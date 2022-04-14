@@ -1,0 +1,329 @@
+<mmsdialog>
+	<childwindow name="custom_osd_popup_win" dx="0px" dy="0px" w="1440px" h="810px" alignment="top-left" show="false"
+		focusable="false" bgcolor="#00000000">
+
+		<childwindow name="rssiValue" dx="0px" dy="0px" w="100px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+<!--
+			<hbox name="rssiValue" size="50px">
+				<image size="48px" image.name="custom_osd_rssi.png" alignment="right"/>
+				<textbox class="RobotoCondensedBoldTextBoxClass" size="52px" name="rssiValueText" text="99" color="#fffffff2" font.size="28" alignment="center" />
+			</hbox>
+-->
+				<vbox>
+				<gap />
+					<hbox size="48px">
+					<image image.name="custom_osd_rssi.png" selimage.name="custom_osd_rssi.png" size="48px" alignment="right"/>
+					<textbox name="rssiValueText" class="RobotoCondensedBoldTextBoxClass" size="52px" text="99" color="#b83dbaf2" font.size="28" alignment="center" />
+					</hbox>
+				<gap />
+				</vbox>
+		</childwindow>
+
+		<childwindow name="flyMode" dx="110px" dy="0px" w="100px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="100px" name="flyModeText" text="ACRO" color="#fffffff2" font.size="28" alignment="center" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="pidRateProfile" dx="220px" dy="0px" w="100px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="100px" name="pidRateProfileText" text="1-1" color="#fffffff2" font.size="28" alignment="center" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="gpsSats" dx="330px" dy="0px" w="100px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<image size="48px" image.name="custom_osd_gps.png" alignment="right"/>
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="52px" name="gpsSatsText" text="14" color="#b83dbaf2" font.size="28" alignment="left" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="currentDraw" dx="440px" dy="0px" w="100px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="100px" name="currentDrawText" text="00.00a" color="#b83dbaf2" font.size="28" alignment="center" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="power" dx="550px" dy="0px" w="100px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="100px" name="powerText" text="000 W" color="#b83dbaf2" font.size="28" alignment="center" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="numericalVario" dx="660px" dy="0px" w="150px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="150px" name="numericalVarioText" text="0.0 m/s" color="#b83dbaf2" font.size="28" alignment="center" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="escTemp" dx="820px" dy="0px" w="150px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="10px" text="E" color="#b83dbaf2" font.size="28" alignment="center" />
+					<image size="48px" image.name="custom_osd_temperature.png" alignment="center"/>
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="92px" name="escTempText" text="00&#176;C" color="#b83dbaf2" font.size="28" alignment="left" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="craftName" dx="0px" dy="60px" w="200px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="200px" name="craftNameText" text="CRAFT_NAME" color="#b83dbaf2" font.size="28" alignment="center" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="disarmed" dx="210px" dy="60px" w="200px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="200px" name="disarmedText" text="DISARMED" color="#ffff00f2" font.size="28" alignment="center" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="pitchAngle" dx="420px" dy="60px" w="150px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+			<hbox size="48px">
+				<textbox class="RobotoCondensedBoldTextBoxClass" size="50px" text="Pit " color="#b83dbaf2" font.size="16" alignment="right" />
+				<textbox class="RobotoCondensedBoldTextBoxClass" size="100px" name="pitchAngleText" text="-00.0" color="#b83dbaf2" font.size="28" alignment="center" />
+			</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="rollAngle" dx="580px" dy="60px" w="150px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+			<hbox size="48px">
+				<textbox class="RobotoCondensedBoldTextBoxClass" size="50px" text="Rol " color="#b83dbaf2" font.size="16" alignment="right" />
+				<textbox class="RobotoCondensedBoldTextBoxClass" size="100px" name="rollAngleText" text="-00.0" color="#b83dbaf2" font.size="28" alignment="center" />
+			</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="mainBattVoltage" dx="740px" dy="60px" w="150px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<image size="48px" image.name="custom_osd_voltage.png" alignment="right"/>
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="102px" name="mainBattVoltageText" text="00.0v" color="#b83dbaf2" font.size="28" alignment="left" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="avgCeilVoltage" dx="900px" dy="60px" w="150px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+						<image size="48px" image.name="custom_osd_voltage.png" alignment="right"/>
+						<textbox class="RobotoCondensedBoldTextBoxClass" size="102px" name="avgCeilVoltageText" text="0.00v" color="#b83dbaf2" font.size="28" alignment="left" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="mahDrawn" dx="1060px" dy="60px" w="150px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="150px" name="mahDrawnText" text="000mAh" color="#b83dbaf2" font.size="28" alignment="center" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="gpsLon" dx="0px" dy="120px" w="300px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+						<image size="48px" image.name="custom_osd_right_arrow.png" alignment="right"/>
+						<textbox class="RobotoCondensedBoldTextBoxClass" size="252px" name="gpsLonText" text="-000.0000000" color="#b83dbaf2" font.size="28" alignment="left" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="gpsLat" dx="310px" dy="120px" w="300px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<image size="48px" image.name="custom_osd_up_arrow.png" alignment="right"/>
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="252px" name="gpsLatText" text="-000.0000000" color="#b83dbaf2" font.size="28" alignment="left" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="pidRoll" dx="620px" dy="120px" w="300px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="300px" name="pidRollText" text="ROL 000 000 000" color="#fffffff2" font.size="28" alignment="center" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="pidPitch" dx="930px" dy="120px" w="300px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="300px" name="pidPitchText" text="PIT 000 000 000" color="#fffffff2" font.size="28" alignment="center" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="mainBattUsage" dx="1240px" dy="120px" w="200px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="25px">
+					<progressbar name="mainBattUsageProgress" size="200px" color="#ffffffff" bgcolor="#00000000"
+						margin="1" border.color="#ffffffff" border.thickness="2" border.margin="1" clickable="false" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="pidYaw" dx="0px" dy="180px" w="300px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="300px" name="pidYawText" text="YAW 000 000 000" color="#fffffff2" font.size="28" alignment="center" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="rtcDate" dx="310px" dy="180px" w="300px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="300px" name="rtcDateText" text="2019-10-14-12:00:00" color="#fffffff2" font.size="24" alignment="center" /> />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="horizonSidebars" dx="0px" dy="240px" w="720px" h="230px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="220px">
+					<image name="horizonSidebars" image.name="custom_osd_horizon_sidebars_720.png" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+
+		<childwindow name="crossHairs" dx="730px" dy="240px" w="80px" h="82px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="80px">
+					<image name="crossHairs" image.name="custom_osd_cross_hairs.png" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+		<childwindow name="gpsSpeed" dx="0px" dy="300px" w="200px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size = "48px">
+					<image size="48px" image.name="custom_osd_gps_speed.png" alignment="right" />
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="152px" name="gpsSpeedText" text="---" color="#b83dbaf2" font.size="28" alignment="left" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+		<childwindow name="altitude" dx="210px" dy="300px" w="200px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="50px" text="Alt" color="#b83dbaf2" font.size="16" alignment="right" />
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="150px" name="altitudeText" text="0.0" color="#b83dbaf2" font.size="28" alignment="center" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+		<childwindow name="homeDist" dx="420px" dy="300px" w="200px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size = "48px">
+					<image size="48px" image.name="custom_osd_gps_home.png" alignment="right" />
+					<textbox class="RobotoCondensedBoldTextBoxClass" size="152px" name="homeDistText" text="---" color="#b83dbaf2" font.size="28" alignment="left" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+		<childwindow name="homeDir" dx="630px" dy="300px" w="50px" h="50px" alignment="top-left" show="false"
+			focusable="false" bgcolor="#00000000">
+			<vbox>
+			<gap />
+				<hbox size="48px">
+					<image size="48px" name="homeDirImage" image.name="custom_osd_hyphen.png" />
+				</hbox>
+			<gap />
+			</vbox>
+		</childwindow>
+	</childwindow>
+</mmsdialog>
